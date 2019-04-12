@@ -4,7 +4,7 @@
     @guest
         @include('auth.login')
     @else
-        <form method="POST" action="/shops">
+        <form method="POST" action="{{ route('shops.store') }}">
             @csrf
             <div class="form-group">
                 <input type="text" name="workshop_name" class="form-control" placeholder="Enter workshop name">

@@ -6,17 +6,38 @@
         <h3>Senaeya aims to be the best industrial area guid in the city</h3>
         <div class="border my-4"></div>
     @else
-        <h3>Welcome {{ Auth::user()->email }}</h3>
-        <a class="btn btn-dark" href="/add">Add Your Business</a>
-        @if(count($shops) > 0)
-            <ul>
-                @foreach($shops as $shop)
-                    <li>{{$shop->name}}</li>
-                @endforeach
-            </ul>
-        @else
-            <p class="mt-3">Nothing to display</p>
+        @if (Session::has('message'))
+            <div class="alert alert-info">{{Session::get('message')}}</div>
         @endif
+        <h3>Welcome {{ Auth::user()->email }}</h3>
+        <a class="btn btn-dark" href="{{ route('shops.create') }}">Add Your Business</a>
+        <ul class="list-group list-group-flush mt-3">
+            @if(count($shops) > 0)
+                @foreach($shops as $shop)
+                    <li class="list-group-item">
+                        <a class="mb-0 h5 text-dark text-decoration-none" href="{{$shop->url}}">{{$shop->name}}</a>
+                        <br>
+                        <small class="text-success my-0">Tel: {{$shop->number}}</small>
+                        <br>
+                        <small class="text-secondary mb-2">{{$shop->address}}</small>
+                        <form method="POST" action="{{ route('shops.destroy', $shop) }}">
+                            @csrf
+                            {{ method_field('DELETE') }}
+                            <button type="submit" class="btn btn-danger">Delete
+                            </button>
+                        </form>
+                        <form method="GET" action="{{ route('shops.edit', $shop->id) }}">
+                            @csrf
+                            <button type="submit" class="btn btn-info">Edit
+                            </button>
+                        </form>
+                    </li>
+                @endforeach
+            @else
+                <p>No Results Found</p>
+            @endif
+
+        </ul>
 
     @endguest
 

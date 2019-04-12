@@ -32,15 +32,9 @@ class ShopsController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.add');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         $this->validate($request, [
@@ -49,55 +43,56 @@ class ShopsController extends Controller
             'workshop_address' => 'required',
             'workshop_url' => 'required'
         ]);
+
+        $shop = new Shop();
+        $shop->name = request('workshop_name');
+        $shop->address = request('workshop_address');
+        $shop->url = request('workshop_url');
+        $shop->number = request('workshop_number');
+        $shop->user_id = auth()->user()->id;
+        $shop->save();
+
+        return redirect('/');
+
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
     public function show($id)
     {
 
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
+
     public function edit($id)
     {
-        //
+        $shop = Shop::find($id);
+        return view('pages.edit')->with('shop', $shop);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param \Illuminate\Http\Request $request
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
+
+    public function update(Request $request, Shop $shop)
     {
-        //
+        $this->validate($request, [
+            'workshop_name' => 'required',
+            'workshop_number' => 'required',
+            'workshop_address' => 'required',
+            'workshop_url' => 'required'
+        ]);
+
+        $shop->name = $request->workshop_name;
+        $shop->url = $request->workshop_url;
+        $shop->address = $request->workshop_address;
+        $shop->number = $request->workshop_number;
+        $shop->save();
+        $request->session()->flash('message', 'Successfully Updated');
+        return redirect('/');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param int $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
+
+    public function destroy(Shop $shop)
     {
-        //
+        $shop->delete();
+        \request()->session()->flash('message', 'Shop Deleted');
+        return redirect('/');
     }
 
-    public function add()
-    {
-        return view('pages.add');
-    }
 }

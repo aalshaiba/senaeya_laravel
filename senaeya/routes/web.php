@@ -22,6 +22,7 @@ Route::get('contact', function (){
 });
 
 Route::resource('shops', 'ShopsController');
+
 Auth::routes();
-Route::get('add', 'ShopsController@add');
+
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');

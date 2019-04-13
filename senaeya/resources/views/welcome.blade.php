@@ -6,11 +6,14 @@
         <h3>Senaeya aims to be the best industrial area guid in the city</h3>
         <div class="border my-4"></div>
     @else
-        @if (Session::has('message'))
-            <div class="alert alert-info">{{Session::get('message')}}</div>
+
+        @if(Auth::user()->name != null)
+            <h3>Welcome {{ Auth::user()->name }}</h3>
+        @else
+            <h3>Welcome {{ Auth::user()->email }}</h3>
         @endif
-        <h3>Welcome {{ Auth::user()->email }}</h3>
         <a class="btn btn-dark" href="{{ route('shops.create') }}">Add Your Business</a>
+
         <ul class="list-group list-group-flush mt-3">
             @if(count($shops) > 0)
                 @foreach($shops as $shop)

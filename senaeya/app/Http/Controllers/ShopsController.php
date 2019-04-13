@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Shop;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 
 class ShopsController extends Controller
 {
-
-
 
     public function index()
     {
@@ -95,5 +94,7 @@ class ShopsController extends Controller
     public function goingBack() {
         return redirect('/');
     }
+
+
 
 }

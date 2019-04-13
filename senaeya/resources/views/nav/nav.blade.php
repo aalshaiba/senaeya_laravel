@@ -20,46 +20,51 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link {{request()->is('/') ? 'active':''}}" href="/"><i class="fas fa-home mr-2"></i>Home <span
+                <a class="nav-link {{request()->is('/') ? 'active':''}}" href="/"><i class="fas fa-home mr-2"></i>Home
+                    <span
                             class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{request()->is('shops') ? 'active' : ''}}" href="/shops"><i class="fas fa-car mr-2"></i>Shops</a>
+                <a class="nav-link {{request()->is('shops') ? 'active' : ''}}" href="/shops"><i
+                            class="fas fa-car mr-2"></i>Shops</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link {{request()->is('privacy') ? 'active': ''}}" href="/privacy"><i class="fas fa-bell-slash mr-2"></i>Privacy</a>
+                <a class="nav-link {{request()->is('privacy') ? 'active': ''}}" href="/privacy"><i
+                            class="fas fa-bell-slash mr-2"></i>Privacy</a>
             </li>
             <!-- Authentication Links -->
             @guest
                 <li class="nav-item">
-                    <a class="nav-link {{request()->is('login') ? 'active':''}}" href="{{ route('login') }}"><i class="fas fa-plus mr-2"></i>Add Your
+                    <a class="nav-link {{request()->is('login') ? 'active':''}}" href="{{ route('login') }}"><i
+                                class="fas fa-plus mr-2"></i>Add Your
                         Business</a>
                 </li>
-{{--                @if (Route::has('register'))--}}
-{{--                    <li class="nav-item">--}}
-{{--                        <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>--}}
-{{--                    </li>--}}
-{{--                @endif--}}
             @else
-                <li class="nav-item">
-                    <a class="nav-link {{request()->is('/') ? 'active':''}}" href="/">
-                        {{ Auth::user()->email }} <span class="caret"></span>
-                    </a>
-                </li>
+                @if(Auth::user()->name !=null)
+                    <li class="nav-item">
+                        <a class="nav-link {{request()->is('/') ? 'active':''}}" href="/">
+                            {{ Auth::user()->name }} <span class="caret"></span>
+                        </a>
+                    </li>
+                @else
+                    <li class="nav-item">
+                        <a class="nav-link {{request()->is('/') ? 'active':''}}" href="/">
+                            {{ Auth::user()->email }} <span class="caret"></span>
+                        </a>
+                    </li>
+                @endif
+
 
                 <li class="nav-item">
-                    <a class="nav-link {{request()->is('logout') ? 'active':''}}" href="/logout">
-                       Logout
+                    <a class="nav-link {{request()->is('logout') ? 'active':''}}" href="{{ route('logout') }}">
+                        Logout
                     </a>
-
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form>
                 </li>
             @endguest
 
             <li class="nav-item">
-                <a href="/contact" class="nav-link {{request()->is('contact') ? 'active' : ''}}"><i class="fas fa-info mr-2"></i>Contact us</a>
+                <a href="/contact" class="nav-link {{request()->is('contact') ? 'active' : ''}}"><i
+                            class="fas fa-info mr-2"></i>Contact us</a>
             </li>
         </ul>
 

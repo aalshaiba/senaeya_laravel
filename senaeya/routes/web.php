@@ -25,4 +25,4 @@ Route::resource('shops', 'ShopsController');
 
 Auth::routes();
 
-Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
+Route::get('logout', 'Auth\LoginController@logout');

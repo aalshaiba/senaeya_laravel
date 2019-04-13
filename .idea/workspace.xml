@@ -210,7 +210,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="6" />
     <option name="y" value="23" />
-    <option name="width" value="921" />
+    <option name="width" value="1130" />
     <option name="height" value="946" />
   </component>
   <component name="ProjectView">
@@ -218,7 +218,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,7 +240,22 @@
               <item name="senaeya" type="b2602c69:ProjectViewProjectNode" />
               <item name="senaeya" type="462c0819:PsiDirectoryNode" />
               <item name="senaeya" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="senaeya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
+              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="senaeya" type="b2602c69:ProjectViewProjectNode" />
+              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
+              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="senaeya" type="b2602c69:ProjectViewProjectNode" />
@@ -251,6 +265,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">

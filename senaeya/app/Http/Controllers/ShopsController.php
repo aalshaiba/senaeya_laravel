@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Shop;
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Input;
 
 class ShopsController extends Controller
@@ -92,6 +93,18 @@ class ShopsController extends Controller
     }
 
     public function goingBack() {
+        return redirect('/');
+    }
+
+    public function name() {
+        return view('pages.name_view');
+    }
+
+    public function change_name() {
+
+        $user = User::find(Auth::user()->id);
+        $user->name = \request('name');
+        $user->save();
         return redirect('/');
     }
 

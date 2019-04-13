@@ -27,3 +27,12 @@ Auth::routes();
 
 Route::get('logout', 'Auth\LoginController@logout');
 
+Route::get('name_view', [
+   'as' => 'name',
+   'uses' => 'ShopsController@name'
+]);
+
+Route::post('change_name', [
+    'as' => 'apply',
+    'uses' => 'ShopsController@change_name'
+]);

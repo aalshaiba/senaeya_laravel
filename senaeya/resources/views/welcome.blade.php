@@ -13,7 +13,7 @@
             <h3>Welcome {{ Auth::user()->email }}</h3>
         @endif
         <a class="btn btn-dark" href="{{ route('shops.create') }}">Add Your Business</a>
-
+        <a class="btn btn-dark" href="{{ URL::route('name') }}">Update your name</a>
         <ul class="list-group list-group-flush mt-3">
             @if(count($shops) > 0)
                 @foreach($shops as $shop)

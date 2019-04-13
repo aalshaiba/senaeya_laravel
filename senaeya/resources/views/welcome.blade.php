@@ -20,9 +20,8 @@
                         <small class="text-success my-0">Tel: {{$shop->number}}</small>
                         <br>
                         <small class="text-secondary mb-2">{{$shop->address}}</small>
-                        <form method="POST" action="{{ route('shops.destroy', $shop) }}">
+                        <form method="GET" action="{{ route('shops.show', $shop->id) }}">
                             @csrf
-                            {{ method_field('DELETE') }}
                             <button type="submit" class="btn btn-danger">Delete
                             </button>
                         </form>

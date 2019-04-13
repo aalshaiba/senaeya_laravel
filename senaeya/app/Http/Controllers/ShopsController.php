@@ -8,6 +8,10 @@ use Illuminate\Support\Facades\Input;
 
 class ShopsController extends Controller
 {
+
+    public function __construct() {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -52,13 +56,14 @@ class ShopsController extends Controller
         $shop->user_id = auth()->user()->id;
         $shop->save();
 
-        return redirect('/');
+        return redirect('/')->with('success', 'Shop created');
 
     }
 
     public function show($id)
     {
-
+        $shop = Shop::find($id);
+        return view('pages.confirm_deletion')->with('shop', $shop);
     }
 
 
@@ -83,15 +88,17 @@ class ShopsController extends Controller
         $shop->address = $request->workshop_address;
         $shop->number = $request->workshop_number;
         $shop->save();
-        $request->session()->flash('message', 'Successfully Updated');
-        return redirect('/');
+        return redirect('/')->with('update', 'Shop Updated');
     }
 
 
     public function destroy(Shop $shop)
     {
         $shop->delete();
-        \request()->session()->flash('message', 'Shop Deleted');
+        return redirect('/')->with('error', 'Shop Deleted');
+    }
+
+    public function goingBack() {
         return redirect('/');
     }
 

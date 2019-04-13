@@ -6,6 +6,11 @@ use App\User;
 
 class DashboardController extends Controller
 {
+
+    public function __construct() {
+        $this->middleware('auth');
+    }
+
     public function userShops() {
         if (auth()->guest()) {
             return view('welcome');

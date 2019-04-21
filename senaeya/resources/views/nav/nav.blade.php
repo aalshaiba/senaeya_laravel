@@ -24,10 +24,10 @@
                     <span
                             class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link {{request()->is('shops') ? 'active' : ''}}" href="/shops"><i
-                            class="fas fa-car mr-2"></i>Shops</a>
-            </li>
+{{--            <li class="nav-item">--}}
+{{--                <a class="nav-link {{request()->is('shops') ? 'active' : ''}}" href="/shops"><i--}}
+{{--                            class="fas fa-car mr-2"></i>Shops</a>--}}
+{{--            </li>--}}
             <li class="nav-item">
                 <a class="nav-link {{request()->is('privacy') ? 'active': ''}}" href="/privacy"><i
                             class="fas fa-bell-slash mr-2"></i>Privacy</a>

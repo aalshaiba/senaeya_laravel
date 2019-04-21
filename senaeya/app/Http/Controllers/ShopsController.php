@@ -14,12 +14,12 @@ class ShopsController extends Controller
     public function index()
     {
 
-        $query = Input::get('q');
-        $result = Shop::query()
-            ->where('name', 'LIKE', "%" . $query . "%")
-            ->orWhere('address', 'LIKE', "%" . $query . "%")->get();
-
-        return view('pages.shops')->with('shops', $result);
+//        $query = Input::get('q');
+//        $result = Shop::query()
+//            ->where('name', 'LIKE', "%" . $query . "%")
+//            ->orWhere('address', 'LIKE', "%" . $query . "%")->get();
+//
+//        return view('pages.shops')->with('shops', $result);
 
     }
 
@@ -50,7 +50,7 @@ class ShopsController extends Controller
         $shop->promotions = request('promotions');
         $shop->services = request('workshop_services');
         $shop->car_models = request('car_models');
-        $shop->categories = request('categories');
+        $shop->categories = implode(",", request('categories'));
         $shop->mobile = request('workshop_mobile_number');
         $shop->user_id = auth()->user()->id;
         $shop->save();
@@ -89,7 +89,7 @@ class ShopsController extends Controller
         $shop->promotions = $request->promotions;
         $shop->services = $request->workshop_services;
         $shop->car_models = $request->car_models;
-        $shop->categories = $request->categories;
+        $shop->categories = implode(",", request('categories'));
         $shop->mobile = $request->workshop_mobile_number;
         $shop->save();
         return redirect('/')->with('update', 'Shop Updated');

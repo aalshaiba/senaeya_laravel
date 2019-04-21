@@ -23,16 +23,18 @@
                         <small class="text-success my-0">Tel: {{$shop->number}}</small>
                         <br>
                         <small class="text-secondary mb-2">{{$shop->address}}</small>
-                        <form method="GET" action="{{ route('shops.show', $shop->id) }}">
-                            @csrf
-                            <button type="submit" class="btn btn-danger">Delete
-                            </button>
-                        </form>
-                        <form method="GET" action="{{ route('shops.edit', $shop->id) }}">
-                            @csrf
-                            <button type="submit" class="btn btn-info">Edit
-                            </button>
-                        </form>
+                        <div class="float-right">
+                            <form class="d-inline" method="GET" action="{{ route('shops.show', $shop->id) }}">
+                                @csrf
+                                <button type="submit" class="btn btn-danger">Delete
+                                </button>
+                            </form>
+                            <form class="d-inline" method="GET" action="{{ route('shops.edit', $shop->id) }}">
+                                @csrf
+                                <button type="submit" class="btn btn-info">Edit
+                                </button>
+                            </form>
+                        </div>
                     </li>
                 @endforeach
             @else

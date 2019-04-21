@@ -92,7 +92,8 @@
                 <textarea type="text" name="promotions" class="form-control"
                           placeholder="Promotions / Offers"></textarea>
             </div>
-            <button type="submit" class="btn btn-dark">Submit</button>
+            <button type="submit" class="btn btn-dark">Save</button>
+            <a href="/" class="btn btn-info">Cancel / Back</a>
         </form>
     @endguest
 

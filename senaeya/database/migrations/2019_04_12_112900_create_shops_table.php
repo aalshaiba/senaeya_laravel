@@ -19,6 +19,11 @@ class CreateShopsTable extends Migration
             $table->mediumText('address');
             $table->string('number');
             $table->string('url');
+            $table->string('mobile')->nullable();
+            $table->string('services')->nullable();
+            $table->string('car_models')->nullable();
+            $table->string('categories')->nullable();
+            $table->string('promotions')->nullable();
         });
     }
 

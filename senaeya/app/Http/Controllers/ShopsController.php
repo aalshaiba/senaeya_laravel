@@ -35,18 +35,23 @@ class ShopsController extends Controller
 
     public function store(Request $request)
     {
-        $this->validate($request, [
-            'workshop_name' => 'required',
-            'workshop_number' => 'required',
-            'workshop_address' => 'required',
-            'workshop_url' => 'required'
-        ]);
+//        $this->validate($request, [
+//            'workshop_name' => 'required',
+//            'workshop_number' => 'required',
+//            'workshop_address' => 'required',
+//            'workshop_url' => 'required'
+//        ]);
 
         $shop = new Shop();
         $shop->name = request('workshop_name');
         $shop->address = request('workshop_address');
         $shop->url = request('workshop_url');
         $shop->number = request('workshop_number');
+        $shop->promotions = request('promotions');
+        $shop->services = request('workshop_services');
+        $shop->car_models = request('car_models');
+        $shop->categories = request('categories');
+        $shop->mobile = request('workshop_mobile_number');
         $shop->user_id = auth()->user()->id;
         $shop->save();
 
@@ -70,17 +75,22 @@ class ShopsController extends Controller
 
     public function update(Request $request, Shop $shop)
     {
-        $this->validate($request, [
-            'workshop_name' => 'required',
-            'workshop_number' => 'required',
-            'workshop_address' => 'required',
-            'workshop_url' => 'required'
-        ]);
+//        $this->validate($request, [
+//            'workshop_name' => 'required',
+//            'workshop_number' => 'required',
+//            'workshop_address' => 'required',
+//            'workshop_url' => 'required'
+//        ]);
 
         $shop->name = $request->workshop_name;
         $shop->url = $request->workshop_url;
         $shop->address = $request->workshop_address;
         $shop->number = $request->workshop_number;
+        $shop->promotions = $request->promotions;
+        $shop->services = $request->workshop_services;
+        $shop->car_models = $request->car_models;
+        $shop->categories = $request->categories;
+        $shop->mobile = $request->workshop_mobile_number;
         $shop->save();
         return redirect('/')->with('update', 'Shop Updated');
     }
@@ -103,7 +113,7 @@ class ShopsController extends Controller
     public function change_name() {
 
         $user = User::find(Auth::user()->id);
-        $user->name = \request('name');
+        $user->name = request('name');
         $user->save();
         return redirect('/');
     }

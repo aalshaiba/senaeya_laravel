@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c0fab82b-3dc1-43c0-b000-bbfe87eb79e5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/senaeya/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/senaeya/app/Http/Kernel.php" afterDir="false" />
-    </list>
+    <list default="true" id="c0fab82b-3dc1-43c0-b000-bbfe87eb79e5" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/senaeya/resources/views/pages/add.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
+            <state relative-caret-position="224">
+              <caret line="91" column="17" lean-forward="true" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -235,7 +232,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="628" />
+    <option name="x" value="253" />
     <option name="y" value="23" />
     <option name="width" value="1127" />
     <option name="height" value="937" />
@@ -245,6 +242,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,28 +265,12 @@
               <item name="senaeya_laravel" type="b2602c69:ProjectViewProjectNode" />
               <item name="senaeya_laravel" type="462c0819:PsiDirectoryNode" />
               <item name="senaeya" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senaeya_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senaeya_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senaeya_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senaeya_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,6 +324,7 @@
       <workItem from="1555880395962" duration="126000" />
       <workItem from="1555880712696" duration="173000" />
       <workItem from="1555881220731" duration="365000" />
+      <workItem from="1555959684693" duration="149000" />
     </task>
     <task id="LOCAL-00001" summary="Revise">
       <created>1555113511369</created>
@@ -392,16 +375,23 @@
       <option name="project" value="LOCAL" />
       <updated>1555880868848</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added CORS">
+      <created>1555959811220</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1555959811220</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38843000" />
+    <option name="totallyTimeSpent" value="38992000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="448" y="38" width="1127" height="937" extended-state="0" />
+    <frame x="253" y="23" width="1127" height="937" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34084508" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35023475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -456,7 +446,8 @@
     <MESSAGE value="update user name is working" />
     <MESSAGE value="Fields are added" />
     <MESSAGE value="Modified the add form (cancel button added)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified the add form (cancel button added)" />
+    <MESSAGE value="Added CORS" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added CORS" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/senaeya/resources/views/pages/contact.blade.php">
@@ -683,6 +674,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/senaeya/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/senaeya/app/Http/Middleware/CORS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/senaeya/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/senaeya/app/Http/Controllers/ShopsController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -728,31 +740,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/senaeya/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/senaeya/app/Http/Middleware/CORS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/senaeya/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/senaeya/resources/views/pages/add.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
+        <state relative-caret-position="224">
+          <caret line="91" column="17" lean-forward="true" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
         </state>
       </provider>
     </entry>

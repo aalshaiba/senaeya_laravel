@@ -110,15 +110,18 @@ class ShopsController extends Controller
         return redirect('/')->with('error', 'Shop Deleted');
     }
 
-    public function goingBack() {
+    public function goingBack()
+    {
         return redirect('/');
     }
 
-    public function name() {
+    public function name()
+    {
         return view('pages.name_view');
     }
 
-    public function change_name() {
+    public function change_name()
+    {
 
         $user = User::find(Auth::user()->id);
         $user->name = request('name');
@@ -126,6 +129,9 @@ class ShopsController extends Controller
         return redirect('/');
     }
 
-
+    public function link_existing()
+    {
+        return view('pages.link_business');
+    }
 
 }

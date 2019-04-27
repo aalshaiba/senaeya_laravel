@@ -20,7 +20,11 @@
                           placeholder="Location Address"></textarea>
             </div>
             <div class="form-group">
-                <input type="text" name="workshop_url" class="form-control" placeholder="Google Location URL">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <a class="input-group-text" id="basic-addon1" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Location</a>
+                    </div>
+                    <input type="text" name="workshop_url" class="form-control" placeholder="Google Location URL"></div>
             </div>
             <div class="form-group">
                 <textarea type="text" name="workshop_services" class="form-control" placeholder="Services"></textarea>

@@ -15,6 +15,7 @@
         @endif
         <a class="btn btn-dark" href="{{ route('shops.create') }}">Add Your Business</a>
         <a class="btn btn-dark" href="{{ URL::route('name') }}">Update your name</a>
+        <a class="btn btn-dark" href="{{ URL::route('link') }}">Link your account to Existing Business</a>
         <ul class="list-group list-group-flush mt-3">
             @if(count($shops) > 0)
                 @foreach($shops as $shop)

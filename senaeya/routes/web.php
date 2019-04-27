@@ -32,6 +32,8 @@ Route::get('name_view', [
    'uses' => 'ShopsController@name'
 ]);
 
+Route::get('link', 'ShopsController@link_existing')->name('link');
+
 Route::post('change_name', [
     'as' => 'apply',
     'uses' => 'ShopsController@change_name'

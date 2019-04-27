@@ -5,6 +5,7 @@
     @guest
         <h3>Senaeya aims to be the best industrial area guid in the city</h3>
         <div class="border my-4"></div>
+        <a class="btn btn-dark" href="{{route('login')}}">Register / Login Here</a>
     @else
 
         @if(Auth::user()->name != null)

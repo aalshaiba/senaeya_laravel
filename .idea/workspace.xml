@@ -29,12 +29,12 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/senaeya/app/Http/Controllers/ShopsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="56" column="9" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="56" selection-end-column="9" />
+            <state relative-caret-position="111">
+              <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
               <folding>
                 <element signature="e#40#53#0#PHP" expanded="true" />
               </folding>
@@ -45,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/senaeya/resources/views/pages/edit.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-636">
-              <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            <state relative-caret-position="116">
+              <caret line="123" selection-start-line="123" selection-end-line="123" />
             </state>
           </provider>
         </entry>
@@ -100,11 +100,11 @@
         <option value="$PROJECT_DIR$/senaeya/resources/views/pages/edit.blade.php" />
         <option value="$PROJECT_DIR$/senaeya/resources/views/nav/nav.blade.php" />
         <option value="$PROJECT_DIR$/senaeya/resources/views/pages/confirm_deletion.blade.php" />
-        <option value="$PROJECT_DIR$/senaeya/.env" />
         <option value="$PROJECT_DIR$/senaeya/resources/views/pages/add.blade.php" />
         <option value="$PROJECT_DIR$/senaeya/app/Http/Middleware/CORS.php" />
         <option value="$PROJECT_DIR$/senaeya/app/Http/Kernel.php" />
         <option value="$PROJECT_DIR$/senaeya/app/Http/Controllers/ShopsController.php" />
+        <option value="$PROJECT_DIR$/senaeya/.env" />
       </list>
     </option>
   </component>
@@ -190,8 +190,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="455" />
     <option name="y" value="23" />
-    <option name="width" value="1127" />
+    <option name="width" value="912" />
     <option name="height" value="797" />
   </component>
   <component name="ProjectView">
@@ -199,6 +200,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,72 +213,10 @@
               <item name="senaeya_laravel" type="462c0819:PsiDirectoryNode" />
               <item name="senaeya" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="senaeya_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senaeya_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senaeya_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senaeya_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senaeya_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senaeya_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senaeya_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senaeya_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senaeya_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senaeya_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senaeya_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senaeya_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senaeya_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senaeya_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senaeya_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senaeya_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="senaeya_laravel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="senaeya_laravel" type="462c0819:PsiDirectoryNode" />
-              <item name="senaeya" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -333,7 +273,10 @@
       <workItem from="1555959684693" duration="149000" />
       <workItem from="1556350758473" duration="1000" />
       <workItem from="1556374928294" duration="491000" />
-      <workItem from="1556377234808" duration="968000" />
+      <workItem from="1556377234808" duration="1132000" />
+      <workItem from="1556378641215" duration="84000" />
+      <workItem from="1556378812847" duration="132000" />
+      <workItem from="1556388980392" duration="813000" />
     </task>
     <task id="LOCAL-00001" summary="Revise">
       <created>1555113511369</created>
@@ -391,17 +334,24 @@
       <option name="project" value="LOCAL" />
       <updated>1555959811220</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Modify error of categories">
+      <created>1556378496899</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556378496899</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40452000" />
+    <option name="totallyTimeSpent" value="41645000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1127" height="797" extended-state="0" />
+    <frame x="0" y="23" width="729" height="797" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23474178" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23455377" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -414,7 +364,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32833582" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2323838" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2323838" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32965687" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -457,7 +407,8 @@
     <MESSAGE value="Fields are added" />
     <MESSAGE value="Modified the add form (cancel button added)" />
     <MESSAGE value="Added CORS" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added CORS" />
+    <MESSAGE value="Modify error of categories" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify error of categories" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/senaeya/resources/views/pages/contact.blade.php">
@@ -691,13 +642,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/senaeya/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/senaeya/database/migrations/2019_04_12_112900_create_shops_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-98">
@@ -742,15 +686,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/senaeya/resources/views/pages/edit.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-636">
-          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        <state relative-caret-position="116">
+          <caret line="123" selection-start-line="123" selection-end-line="123" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/senaeya/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/senaeya/app/Http/Controllers/ShopsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="56" column="9" lean-forward="true" selection-start-line="52" selection-start-column="8" selection-end-line="56" selection-end-column="9" />
+        <state relative-caret-position="111">
+          <caret line="47" column="22" selection-start-line="47" selection-start-column="22" selection-end-line="47" selection-end-column="22" />
           <folding>
             <element signature="e#40#53#0#PHP" expanded="true" />
           </folding>

@@ -50,10 +50,10 @@ class ShopsController extends Controller
         $shop->promotions = request('promotions');
         $shop->services = request('workshop_services');
         $shop->car_models = request('car_models');
-        if (count(request('categories')) > 0) {
-            $shop->categories = implode(",", request('categories'));
-        } else {
+        if (request('categories') === null) {
             $shop->categories = null;
+        } else {
+            $shop->categories = implode(",", request('categories'));
         }
         $shop->mobile = request('workshop_mobile_number');
         $shop->user_id = auth()->user()->id;
@@ -93,10 +93,10 @@ class ShopsController extends Controller
         $shop->promotions = $request->promotions;
         $shop->services = $request->workshop_services;
         $shop->car_models = $request->car_models;
-        if (count(request('categories')) > 0) {
-            $shop->categories = implode(",", request('categories'));
-        } else {
+        if (request('categories') === null) {
             $shop->categories = null;
+        } else {
+            $shop->categories = implode(",", request('categories'));
         }
         $shop->mobile = $request->workshop_mobile_number;
         $shop->save();

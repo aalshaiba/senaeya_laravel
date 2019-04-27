@@ -50,7 +50,11 @@ class ShopsController extends Controller
         $shop->promotions = request('promotions');
         $shop->services = request('workshop_services');
         $shop->car_models = request('car_models');
-        $shop->categories = implode(",", request('categories'));
+        if (count(request('categories')) > 0) {
+            $shop->categories = implode(",", request('categories'));
+        } else {
+            $shop->categories = null;
+        }
         $shop->mobile = request('workshop_mobile_number');
         $shop->user_id = auth()->user()->id;
         $shop->save();
@@ -89,7 +93,11 @@ class ShopsController extends Controller
         $shop->promotions = $request->promotions;
         $shop->services = $request->workshop_services;
         $shop->car_models = $request->car_models;
-        $shop->categories = implode(",", request('categories'));
+        if (count(request('categories')) > 0) {
+            $shop->categories = implode(",", request('categories'));
+        } else {
+            $shop->categories = null;
+        }
         $shop->mobile = $request->workshop_mobile_number;
         $shop->save();
         return redirect('/')->with('update', 'Shop Updated');

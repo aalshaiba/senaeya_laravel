@@ -14,12 +14,12 @@ class ShopsController extends Controller
     public function index()
     {
 
-//        $query = Input::get('q');
-//        $result = Shop::query()
-//            ->where('name', 'LIKE', "%" . $query . "%")
-//            ->orWhere('address', 'LIKE', "%" . $query . "%")->get();
-//
-//        return view('pages.shops')->with('shops', $result);
+        $query = Input::get('q');
+        $result = Shop::query()
+            ->where('name', 'LIKE', "%" . $query . "%")
+            ->orWhere('address', 'LIKE', "%" . $query . "%")->get();
+
+        return view('pages.shops')->with('shops', $result);
 
     }
 

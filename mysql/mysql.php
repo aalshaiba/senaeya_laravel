@@ -1,6 +1,6 @@
 <?php
 
-$connect = mysqli_connect('localhost:8889', 'root', 'root', 'mydb');
+$connect = mysqli_connect('localhost:3306', 'root', 'root', 'mydb');
 
 $file_name = 'data1.json';
 

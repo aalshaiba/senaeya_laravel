@@ -15,10 +15,10 @@ class CreateShopsTable extends Migration
     {
         Schema::create('shops', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->mediumText('address');
-            $table->string('number');
-            $table->string('url');
+            $table->string('name')->nullable();
+            $table->mediumText('address')->nullable();
+            $table->string('number')->nullable();
+            $table->string('url')->nullable();
             $table->string('mobile')->nullable();
             $table->string('services')->nullable();
             $table->string('car_models')->nullable();

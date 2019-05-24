@@ -14,7 +14,7 @@ class AddUserIdToShops extends Migration
     public function up()
     {
         Schema::table('shops', function (Blueprint $table) {
-            $table->integer('user_id');
+            $table->string('user_id');
         });
     }
 
